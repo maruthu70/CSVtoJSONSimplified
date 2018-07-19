@@ -1,0 +1,82 @@
+.header
+{
+    width:100%;
+    height:60px;left:0px;   
+    position:fixed;text-align: center;
+    background-image: linear-gradient(to right,rgb(45, 130, 110),rgb(141, 216, 198),rgb(45, 130, 110))
+}
+
+#imgController
+{
+    height:85%;
+    width:10%;
+    margin-top:0.3%;
+}
+
+#uploader
+{
+    height:85%;
+    width:10%;
+    margin-top:0.3%;
+}
+.imageUploaderContainer
+{
+    width:100%;
+    min-height:500px;
+    height:100%;text-align:center;  
+    background-color:white;left:0px;padding-top:61px;
+}
+.imageUploaderContainer > .uploaderRow
+{
+   padding-top:10px;margin-top:5%;margin-left:25%;background-color: white;height:70px;width:50%;border:2px dashed grey;border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .imageUploaderContainer > .uploaderRow
+{
+   padding-top:10px;margin-top:5%;margin-left:0%;background-color: white;height:70px;width:100%;border:2px dashed grey;border-radius: 5px;
+}
+}
+
+.footer
+{
+    width:100%;bottom:0px;padding-top:0.1%;color:rgb(45, 130, 110);
+    height:30px;left:0px;   
+    position:fixed;text-align: center;font-size: 15px;font-weight: bold;border:1px dotted grey;border-radius: 5px;
+    background-image: linear-gradient(to right,rgb(230, 230, 230),rgb(241, 241, 241),rgb(230, 230, 230))
+}
+
+.textblinker
+{    animation: blinker 2s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+
+
+  #tablerS {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tablerS td, #tablerS th {
+    border: 1px solid #ddd;
+    padding: 8px;border-radius:5px;
+}
+
+#tablerS tr:nth-child(even){background-color: #f2f2f2;}
+
+#tablerS tr:hover {background-color: #ddd;}
+
+#tablerS th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(89, 201, 175);
+    color: white;
+}
